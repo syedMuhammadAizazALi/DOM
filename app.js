@@ -39,38 +39,40 @@
 //        }
 
 
-// const num1 = document.querySelector("#number")
-// const num2 = document.querySelector("#numbers")
-// const operator = document.querySelector("#operator")
-// const h3 = document.querySelector("#head")
 
-// console.log=(num1)
-// console.log=(operator)
-// console.log=(num2)
 
-// function Result(num1, num2, operator) {
-//     let Result;
+
+
+// function calalution() {
+//   const num1 =+(document.querySelector("#number").value);
+// const num2 = +(document.querySelector("#numbers").value);
+// const operator = document.querySelector("#operator").value;
+// const h3 = document.querySelector("#head");
+    
 
 //     switch (operator) {
 //         case ("+"):
-//             Result = num1 + num2;
-//             h3.innerHTML = "Caluculation:" + sum;
+//             h3.innerHTML = num1 + num2;
 
 //             break;
 //         case ("%"):
-//             h3.innerHTML = "calculation:" + per;
+//             h3.innerHTML = num1+num2
 //             break;
 //         case ("/"):
-//             let divided = num1 / num2
-//             h3.innerHTML = "calculation:" + divided;
+//           if (num2 !== 0) {
+//             h3.innerHTML = num1 / num2;
+//         } else {
+//             h3.innerHTML = "Cannot divide by zero";
+//         }
+    
 //             break;
 //         case ("-"):
-//             let sub = num1 - num2
-//             h3.innerHTML = "calculation:" + sub;
+//             h3.innerHTML= num1 - num2
+            
 //             break;
 //         case ("*"):
-//             let multi = num1 * num2
-//             h3.innerHTML = "calculation:" + multi;
+//             h3.innerHTML = num1 * num2
+          
 //             break;
 
 //         default:
@@ -81,49 +83,53 @@
 //     }
 
 
-//     return 'Result: ${Result}'
+   
 // }
 
-// console.log = (num1.value)
-// console.log = (num2.value)
-// console.log = (operator.value)
-// h3.innerHTML = "calculation" + operator;
 
-const monthSelected = document.querySelector("#monthSelected")
-const h3= document.querySelector("#head")
+
+
+
+
+
+
+
+
+
+
+
 
 function day() {
-let season;
-switch (selectedMonth) {
+  
+  const selectedMonth = document.querySelector("#monthSelect").value;
+  
+  const h3 = document.querySelector("#head");
+
+
+  switch (selectedMonth) {
     case 'December':
     case 'January':
     case 'February':
-      season = 'Winter';
+      h3.innerHTML = 'Winter';
       break;
     case 'March':
     case 'April':
-    case 'May':
-      season = 'Spring';
+      h3.innerHTML = 'Spring';
       break;
+    case 'May':
     case 'June':
     case 'July':
-    case 'August':
-      season = 'Summer';
+      h3.innerHTML = 'Summer';
       break;
+    case 'August':
     case 'September':
     case 'October':
+      h3.innerHTML = 'Fall';
+      break;
     case 'November':
-      season = 'Fall';
+      h3.innerHTML = 'Fall';
       break;
     default:
-      season = 'Invalid Month';
+      h3.innerHTML = 'Invalid Month';
   }
-   
-  h3.innerHTML= monthSelected.value
 }
-
-
-
-
-
-
